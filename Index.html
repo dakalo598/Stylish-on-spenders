@@ -1,0 +1,98 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylish on spenders</title>
+</head>
+</style>
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #0d1117; /* Dark background */
+  transition: all 0.5s ease-in-out;
+}
+
+/* The sweeping light beam effect */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: lightSweep 3s infinite;
+}
+
+@keyframes lightSweep {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+  }.hero-rotate-elements {
+  animation: spin 10s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero-float-element {
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+</style>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>money made culture</h1>
+            
+<p>
+  SOS is more than clothes. We’re a movement. 
+  Stylish on Spenders blends premium streetwear with luxury detail — 
+  black bases, gold accents, and cuts that make you stand out without saying a word. 
+  For the ones who spend smart, look expensive, and move different.
+</p>
+
+<div class="hero-images">
+<img src="https://dakalo598.github.io/stylish-on-spenders/SOS-Image-1.jpg" alt="SOS" class="hero-image float-animation spin-animation light-sweep">
+</div>
+
+<div class="hero-actions">
+<a href="#cta" class="cta-button">shop now</a>
+            </div>
+        </div> <!-- Closes hero-content -->
+    </header> <!-- Closes hero-section -->
+
+    <main>
+        <!-- The rest of your page content goes here -->
+    </main>
+</body>
+
+</html>
